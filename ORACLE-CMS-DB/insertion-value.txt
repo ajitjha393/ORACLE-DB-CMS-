@@ -1,0 +1,159 @@
+
+-- INSERTION OF DATA INTO SCHEMA
+
+-- categories table
+
+INSERT INTO categories(cat_id, cat_title) VALUES (1, 'Bootstrap');
+
+INSERT INTO categories(cat_id, cat_title) VALUES (2, 'Javascript');
+
+INSERT INTO categories(cat_id, cat_title) VALUES (4, 'JAVA');
+
+INSERT INTO categories(cat_id, cat_title) VALUES (28, 'PHP');
+
+
+
+-- comments table
+
+
+INSERT INTO comments (comment_id, comment_author, comment_email, comment_post_id, comment_status, comment_date, comment_content)
+VALUES
+(5, 'Tanya', 'tanyasingh12@gmail.com', 1, 'unapproved', to_date('2010-12-13','yyyy-mm-dd'), 'until next time till then love love');
+
+
+INSERT INTO comments (comment_id, comment_author, comment_email, comment_post_id, comment_status, comment_date, comment_content)
+VALUES
+(6, 'Yash', 'bhvgvh@fghbj.com', 7, 'approved', to_date('2017-12-27','yyyy-mm-dd'), 'BeYpuNick');
+
+
+INSERT INTO comments (comment_id, comment_author, comment_email, comment_post_id, comment_status, comment_date, comment_content)
+VALUES
+(10, 'Charlie', 'sheen@playboy.com', 7, 'approved', to_date('2017-12-28','yyyy-mm-dd'), 'touche. Pay the rent.');
+
+
+INSERT INTO comments (comment_id, comment_author, comment_email, comment_post_id, comment_status, comment_date, comment_content)
+VALUES
+(14, 'mansi', 'khemka@brain.com', 1, 'unapproved', to_date('2017-12-28','yyyy-mm-dd'), 'Samsung R and D .');
+
+
+INSERT INTO comments (comment_id, comment_author, comment_email, comment_post_id, comment_status, comment_date, comment_content)
+VALUES
+(15, 'Donna', 'paulsen@amazing.com', 7, 'approved', to_date('2017-12-28','yyyy-mm-dd'), 'I am never wrong.');
+
+
+INSERT INTO comments (comment_id, comment_author, comment_email, comment_post_id, comment_status, comment_date, comment_content)
+VALUES
+(16, 'Yash', 'yashbhojgarhia@gmail.com', 10, 'unapproved', to_date('2018-01-05','yyyy-mm-dd'), 'Love is blind.');
+
+
+
+
+
+-- Posts table
+
+
+
+INSERT INTO posts  VALUES
+(1, 28, 'CMS PHP course is awesome', 'John doe', to_date('2017-12-28','yyyy-mm-dd'), 'image_2.jpg', 'WOW! I really like this course.', 'edwin, php, javascript', 5, 'published', 4);
+
+
+INSERT INTO posts  VALUES
+(7, 1, 'Javascript', 'Edwin Diaz', to_date('2017-12-31','yyyy-mm-dd'), 'image_4.jpg', '<p>are ek baar se dil nahi bharta mudke dekh mujhe dobaara. tang tang tang tan tana tan tan taaara, chalti hai kya 9 se 12 </p>', 'edwin, javascript, married', 3, 'published', 1);
+
+INSERT INTO posts  VALUES
+(8, 1, 'Stranger Things', 'Eleven', to_date('2017-12-31','yyyy-mm-dd'), 'image_3.jpg', '<p>jhjkkhekhleikewjkhjeee</p>        ', 'stranger, things, eleven', 0, 'published', 0);
+
+
+INSERT INTO posts  VALUES
+(10, 4, 'Tibrewal, You Got me.', 'Bhojgarhia', to_date('2018-01-01','yyyy-mm-dd'), 'image_2.jpg', '<p><strong>DPS, Rourkela.</strong></p>\r\n<p>What up ?</p>', 'bhojgarhia, tibrewal', 0, 'published', 4);
+
+INSERT INTO posts  VALUES
+(11, 28, 'January', 'Year',to_date('2018-01-03','yyyy-mm-dd'), 'image_1.jpg', ' 1st Month.', 'jan, january, year', 0, 'published', 0);
+
+INSERT INTO posts  VALUES
+(12, 1, 'February', 'Year', to_date('2018-01-03','yyyy-mm-dd'), 'image_2.jpg', '2nd Month.', 'february, year', 0, 'published', 0);
+
+INSERT INTO posts  VALUES
+(13, 2, 'March', 'Year', to_date('2018-01-03','yyyy-mm-dd'), 'image_3.jpg', '3rd Month.', 'march, year', 0, 'published', 1);
+
+INSERT INTO posts  VALUES
+(14, 4, 'April', 'Month', to_date('2018-01-03','yyyy-mm-dd'), 'image_4.jpg', '        4th Month.', 'april, month', 0, 'published', 1);
+
+INSERT INTO posts  VALUES
+(15, 28, 'May', 'Month', to_date('2018-01-03','yyyy-mm-dd'), 'image_5.jpg', '5th Month.\r\n        ', 'may, month', 0, 'published', 0);
+
+INSERT INTO posts  VALUES
+(16, 1, 'June', 'Month', to_date('2018-01-03','yyyy-mm-dd'), 'image_1.jpg', '6th Month.        ', 'june, month', 0, 'published', 0);
+
+INSERT INTO posts  VALUES
+(17, 2, 'July', 'Week', to_date('2018-01-03','yyyy-mm-dd'), 'image_2.jpg', '        7th Month.', 'july, week', 0, 'published', 0);
+
+INSERT INTO posts  VALUES
+(18, 4, 'August', 'Week', to_date('2018-01-03','yyyy-mm-dd'), 'image_3.jpg', '        8th Month', 'august, week', 0, 'published', 1);
+INSERT INTO posts  VALUES
+(19, 28, 'Spetember', 'Week', to_date('2018-01-03','yyyy-mm-dd'), 'image_4.jpg', '9th Month.        ', 'september, week', 0, 'published', 1);
+
+INSERT INTO posts  VALUES
+(20, 1, 'October', 'Day', to_date('2018-01-03'), 'image_1.jpg', '10th Month.        ', 'october, day', 0, 'published', 0);
+
+INSERT INTO posts  VALUES
+(21, 2, 'November', 'Day', to_date('2018-01-03'), 'image_2.jpg', '11th Month.        ', 'november, day', 0, 'published', 0);
+
+INSERT INTO posts  VALUES
+(22, 4, 'December', 'Day', to_date('2018-01-03'), 'image_3.jpg', '12th Month.        ', 'december, day', 0, 'published', 2);
+
+
+
+
+
+
+
+-- users table insertion
+
+
+INSERT INTO users VALUES
+(8, 'bj123', '$2y$12$l2B/U.B7e/LC/pdJlWAJfuQA9ZbUNQ1CPyahe/BByLe.eDVKEH6Ee', 'bisu', 'jha', 'bisujha@gmail.com', 'dummy', 'admin', '$2y$10$iusesomecrazystrings22');
+
+INSERT INTO users VALUES
+(11, 'jj123', '$2y$10$H/kDTIO1P9vO3gOkqRlD8.34XbR1jz5hDlS21hIpGG6Mxm5dUoFYG', 'Jay', 'Jhangiani', 'jj@gmail.com', 'dummy2', 'subscriber', '$2y$10$iusesomecrazystrings22');
+
+
+
+
+-- session table insertion
+
+INSERT INTO users_online VALUES
+(1, 'etdt53nb9gfiqppn7ej6hgfats', 15151);
+
+INSERT INTO users_online VALUES
+(2, 'qobma9vl6iigtqp3chl8q66fkv', 1515127688);
+
+INSERT INTO users_online VALUES
+(3, 'cu1gpbolritfffh8igqpibfj6j', 1515122318);
+
+INSERT INTO users_online VALUES
+(4, 'hp3aidsobbvpnjduabi5osncv1', 1515123581);
+
+INSERT INTO users_online VALUES
+(5, 'efru2nrdg6od6j1456m53oc1vf', 1515189728);
+
+INSERT INTO users_online VALUES
+(6, '0db525cvh9jtdd65dnvsri1a9n', 1515211368);
+
+INSERT INTO users_online VALUES
+(7, '3rr821350kmuq2mpf8258php0e', 1515211461);
+
+INSERT INTO users_online VALUES
+(8, 'le0d9a3c4nqn5npg7dd1em5c7p', 1515280383);
+
+INSERT INTO users_online VALUES
+(9, 'trsmm1skkcnn7hdnv7kfkqjr4p', 1515521956);
+
+INSERT INTO users_online VALUES
+(10, 'mtnnu6t21le14tn0hso8nfnn1v', 1515565807);
+
+INSERT INTO users_online VALUES
+(11, '0rrv5crmsa744lt1qqfpfq0gl0', 1515610747);
+
+
+

@@ -1,0 +1,56 @@
+-- CREATION OF TABLE
+
+CREATE TABLE categories (
+  cat_id integer PRIMARY KEY,
+  cat_title varchar2(255) NOT NULL
+);
+
+
+
+CREATE TABLE comments ( 
+  comment_id INTEGER PRIMARY KEY, 
+  comment_author varchar2(255) NOT NULL, 
+  comment_email varchar2(255) NOT NULL, 
+  comment_post_id INTEGER NOT NULL, 
+  comment_status varchar2(255) NOT NULL, 
+  comment_date date NOT NULL, 
+  comment_content varchar2(255) NOT NULL 
+);
+
+
+CREATE TABLE posts (
+  post_id INTEGER PRIMARY KEY,
+  post_category_id INTEGER NOT NULL,
+  post_title varchar2(255) NOT NULL,
+  post_author varchar2(255) NOT NULL,
+  post_date date NOT NULL,
+  post_image varchar2(255) NOT NULL,
+  post_content varchar2(255) NOT NULL,
+  post_tags varchar2(255) NOT NULL,
+  post_comment_count INTEGER NOT NULL,
+  post_status varchar2(255)  DEFAULT 'draft' NOT NULL,
+  post_views_count INTEGER NOT NULL
+);
+
+
+CREATE TABLE users (
+  user_id INTEGER PRIMARY KEY,
+  username varchar2(255) NOT NULL,
+  user_password varchar2(255) NOT NULL,
+  user_firstname varchar2(255) NOT NULL,
+  user_lastname varchar2(255) NOT NULL,
+  user_email varchar2(255) NOT NULL,
+  user_image varchar2(255) NOT NULL,
+  user_role varchar2(255) NOT NULL,
+  randSalt varchar2(255)  DEFAULT '$2y$10$iusesomecrazystrings22' NOT NULL
+);
+
+
+CREATE TABLE users_online (
+  user_id INTEGER PRIMARY KEY,
+  user_session varchar2(255) NOT NULL,
+  user_time INTEGER NOT NULL
+);
+
+
+
